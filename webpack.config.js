@@ -1,16 +1,16 @@
-import Path from 'path';
-import HtmlWebPackPlugin  from 'html-webpack-plugin';
+var Path = require('path');
+var HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './app/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: Path.resolve(__dirname, 'dist'),
     filename: 'application.js'
   },
   module: {
     rules: [
       { test: /\.(js)$/, use: 'babel-loader' },
-      { test: /\.css$/, user: ['style-loader', 'css-loader'] }
+      { test: /\.css$/, use: ['style-loader', 'css-loader'] }
     ]
   },
   plugins: [new HtmlWebPackPlugin({ template: 'app/index.html' })]
