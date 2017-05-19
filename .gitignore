@@ -3,3 +3,6 @@ node_modules
 
 # webpack
 dist
+
+# developement npm logger
+npm-debug.log
