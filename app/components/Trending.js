@@ -9,7 +9,7 @@ export default class Trending extends React.Component{
 
   updateState(language){
     this.setState(function(){
-      return { selected: language, }
+      return { selected: language }
     });
   }
 
@@ -18,12 +18,12 @@ export default class Trending extends React.Component{
                        'Swift']
     return(
       <ul className='programming-languages'>
-        <p>Selected Languages: {this.state.selected}</p>
         {languages.map(function (language) {
           return <li
-                  key={language}>
+                  key={language}
+                  onClick={() => { this.updateState(language) }}>
                   {language}</li>
-        })}
+        }, this)}
       </ul>
     )
   }
