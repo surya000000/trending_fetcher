@@ -19,10 +19,11 @@ export default class Trending extends React.Component{
     return(
       <ul className='programming-languages'>
         {languages.map(function (language) {
-          return <li
-                  key={language}
-                  onClick={() => { this.updateState(language) }}>
-                  {language}</li>
+          return (<li key = {language}
+                      onClick = {() => { this.updateState(language) }}
+                      className = { language == this.state.selected && 'active' }>
+                  {language}
+                 </li>)
         }, this)}
       </ul>
     )
