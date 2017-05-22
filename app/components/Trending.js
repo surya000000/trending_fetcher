@@ -1,5 +1,6 @@
 // Importing react and react-dom modules
 import React from 'react';
+import Languages from './Languages'
 
 export default class Trending extends React.Component{
   constructor(props){
@@ -14,18 +15,9 @@ export default class Trending extends React.Component{
   }
 
   render(){
-    const languages = ['All', 'C', 'Ruby', 'Javascript', 'Python', 'Java', 'C++',
-                       'Swift']
-    return(
-      <ul className='programming-languages'>
-        {languages.map(function (language) {
-          return (<li key = {language}
-                      onClick = {() => { this.updateState(language) }}
-                      className = { language == this.state.selected && 'active' }>
-                  {language}
-                 </li>)
-        }, this)}
-      </ul>
-    )
+    return(<div>
+            <Languages selected={this.state.selected}
+                       updateLanguage={this.updateState.bind(this)} />
+           </div>)
   }
 }
