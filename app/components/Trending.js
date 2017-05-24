@@ -2,6 +2,7 @@
 import React from 'react';
 import Languages from './Languages';
 import Api from '../http_services/Api';
+import RepoList from './RepoList';
 
 export default class Trending extends React.Component{
   constructor(props){
@@ -28,6 +29,7 @@ export default class Trending extends React.Component{
     return(<div>
             <Languages selected={this.state.selected}
                        updateLanguage={this.updateState.bind(this)} />
+            <RepoList repos={this.state.repos} />
            </div>)
   }
 }
