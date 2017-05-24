@@ -7,10 +7,10 @@ function Languages(props){
   return(<ul className='programming-languages'>
          {programmingLanguages.map(function (language) {
          return(<li key = {language}
-              onClick = {() => { props.updateLanguage(language) }}
-              className = { language == props.selected && 'active' }>
-              {language}
-         </li>)
+                    onClick = {() => { props.updateLanguage(language) }}
+                    className = { language == props.selected && 'active' }>
+                    {language}
+                </li>)
        })}
      </ul>
    )
