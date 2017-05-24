@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "NODE_ENV='production' webpack -p",
-    "deploy": "npm run build"
+    "deploy": "npm run build && git push heroku develop:master"
   },
   "babel": {
     "presets": [
