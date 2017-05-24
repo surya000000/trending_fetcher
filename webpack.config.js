@@ -8,6 +8,9 @@ var config = {
     filename: 'application.js',
     publicPath: '/public/'
   },
+  devServer: {
+    historyApiFallback: true
+  },
   module: {
     rules: [
       { test: /\.(js)$/, use: 'babel-loader' },
