@@ -6,7 +6,7 @@ var config = {
   output: {
     path: Path.resolve(__dirname, 'dist'),
     filename: 'application.js',
-    publicPath: '/'
+    publicPath: '/public/'
   },
   devServer: {
     historyApiFallback: true
