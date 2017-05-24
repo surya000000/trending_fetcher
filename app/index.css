@@ -36,20 +36,20 @@ li{
   color: black;
 }
 .repo-list{
-  margin-top: 50px;
+  margin-top: 30px;
 }
 a{
   text-decoration: none;
 }
 .repo-owner-img{
-  height: 170px;
+  height: 180px;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 .trending-repos {
   width: 100%;
   display: block;
-  height: 250px;
+  height: 270px;
   color: black;
   display: flex;
   background-color: #fff;
