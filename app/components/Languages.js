@@ -8,7 +8,7 @@ function Languages(props){
          {programmingLanguages.map(function (language) {
          return(<li key = {language}
                     onClick = {() => { props.updateLanguage(language) }}
-                    className = { language == props.selected && 'active' }>
+                    className = { 'menu-list ' + (language == props.selected && 'active')}>
                     {language}
                 </li>)
        })}
