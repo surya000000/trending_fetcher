@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "build": "webpack-dev-server build",
+    "test": "webpack-dev-servert --env=jsdom",
+    "eject": "webpack-dev-server eject"
   },
   "babel": {
     "presets": [
