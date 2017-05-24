@@ -5,7 +5,8 @@ var config = {
   entry: './app/index.js',
   output: {
     path: Path.resolve(__dirname, 'dist'),
-    filename: 'application.js'
+    filename: 'application.js',
+    publicPath: '/public/'
   },
   module: {
     rules: [
@@ -20,7 +21,7 @@ var config = {
   plugins: [new HtmlWebPackPlugin({ template: 'app/index.html' })]
 }
 if(process.env.NODE_ENV == 'production'){
-  config.plugins.push(new Webpack.DefinePlugin({
+  config.plugins.push(new WebPack.DefinePlugin({
     'process.env': {
       'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     }
