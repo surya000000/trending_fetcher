@@ -20,7 +20,7 @@ $ npm install --save-dev babel-core babel-loader babel-preset-env babel-preset-r
 ```
 ###### running webpack in development
 ```sh
-$ npm run start
+$ npm start
 ```
 Runs in 8080 port.
 
