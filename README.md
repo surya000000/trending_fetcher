@@ -1,14 +1,31 @@
-# battling
-Github profile battling project
+# Github Trending Fetcher
 
-command running guildelines
+***
+Learning react with creating simple application build.
 
-Installing react and react-dom modules as dependencies
-npm install react react-dom
+Fetch all github trending repositories with repo link, author and author profile picture in awesome UI. You can also choose your favourite language and get trending repositories.
 
-Installing babel, webpack and other necessary packages as development dependencies 
-npm install --save-dev babel-core babel-loader babel-preset-env babel-preset-react css-loader style-loader html-webpack-plugin webpack webpack-dev-server
+![alt text](./public/images/app.png "Github Trending fetcher")
 
-running webpack
-npm run create
 
+# Installing Dependencies
+###### For installing react and react-dom modules as dependencies.
+
+```sh
+$ npm install react react-dom
+```
+###### Installing babel, webpack and other necessary packages.
+```sh
+$ npm install --save-dev babel-core babel-loader babel-preset-env babel-preset-react css-loader style-loader html-webpack-plugin webpack webpack-dev-server
+```
+###### running webpack in development
+```sh
+$ npm run start
+```
+Runs in 8080 port.
+
+###### Deploying to production
+```sh
+$ npm build deploy
+```
+*I have set develop as a deployment branch for production you can also change **line no.8 in package.json and mention your deployment branch***
