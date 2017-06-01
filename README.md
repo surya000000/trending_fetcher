@@ -1,7 +1,7 @@
 # Github Trending Fetcher
 
 ***
-Learning react with creating simple application that fetch github trending as selected language.
+Learning react with simple application that fetch github trending as selected language.
 
 Fetch all github trending repositories with repo link, author and author profile picture in awesome UI. You can also choose your favourite language and get trending repositories.
 
