@@ -26,6 +26,6 @@ Runs in 8080 port.
 
 ###### Deploying to production
 ```sh
-$ npm build deploy
+$ npm deploy
 ```
 *I have set develop as a deployment branch for production you can also change **line no.8 in package.json** and mention your deployment branch*
